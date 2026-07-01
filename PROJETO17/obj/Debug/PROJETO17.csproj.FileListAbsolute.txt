@@ -1,8 +1,0 @@
-C:\Users\Usuário\Documents\SharpDevelop Projects\PROJETO17\PROJETO17\bin\Debug\PROJETO17.exe.config
-C:\Users\Usuário\Documents\SharpDevelop Projects\PROJETO17\PROJETO17\bin\Debug\PROJETO17.exe
-C:\Users\Usuário\Documents\SharpDevelop Projects\PROJETO17\PROJETO17\bin\Debug\PROJETO17.pdb
-C:\Users\Usuário\Documents\SharpDevelop Projects\PROJETO17\PROJETO17\obj\Debug\PROJETO17.csprojResolveAssemblyReference.cache
-C:\Users\Usuário\Documents\SharpDevelop Projects\PROJETO17\PROJETO17\obj\Debug\PROJETO17.frmCadastro.resources
-C:\Users\Usuário\Documents\SharpDevelop Projects\PROJETO17\PROJETO17\obj\Debug\PROJETO17.csproj.GenerateResource.Cache
-C:\Users\Usuário\Documents\SharpDevelop Projects\PROJETO17\PROJETO17\obj\Debug\PROJETO17.exe
-C:\Users\Usuário\Documents\SharpDevelop Projects\PROJETO17\PROJETO17\obj\Debug\PROJETO17.pdb
