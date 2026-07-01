@@ -1,0 +1,16 @@
+# Build
+bin/
+obj/
+
+# Visual Studio / SharpDevelop
+.vs/
+*.user
+*.suo
+*.cache
+
+# Logs
+*.log
+
+# Windows
+Thumbs.db
+Desktop.ini
