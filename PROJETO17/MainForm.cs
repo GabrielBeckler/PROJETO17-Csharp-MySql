@@ -10,6 +10,9 @@ using System;
 using System.Collections.Generic;
 using System.Drawing;
 using System.Windows.Forms;
+using MySql.Data;
+using MySql.Data.MySqlClient;
+using System.Data;
 
 namespace PROJETO17
 {
@@ -20,22 +23,41 @@ namespace PROJETO17
 	{
 		public frmCadastro()
 		{
-			//
-			// The InitializeComponent() call is required for Windows Forms designer support.
-			//
 			InitializeComponent();
-			
-			//
-			// TODO: Add constructor code after the InitializeComponent() call.
-			//
+			txtnome.Enabled=false;
+			txtemail.Enabled=false;
+			txtfone.Enablend=false;
 		}
-		void Label4Click(object sender, EventArgs e)
+		
+		void limpar()
 		{
-	
+			sqlcon.Close();
+			txtname.Clear();
+			txtemail.Clear();
+			txtfone.Clear;
+			txtpesquisar.Clear();
 		}
-		void PictureBox1Click(object sender, EventArgs e)
+		
+		void CarregarDados()
 		{
-	
+			String strsql = "SELECT codigo, nome, email, telefone FROM tbclient";
+			MySqlConnection conexao = new MySqlConnection(strcon);
+			try{
+				conexao.Open();
+				MySqlDataAdapter adaptador = new MySqlDataAdapter(strsql, conexao);
+				DataTable tabela = new DataTable();
+				adaptador.Fill(tabela);
+				dataGridView1.DataSource = tabela;
+			}
+			catch (Exception ex)
+			{
+				MessageBpox.Show("Erro ao carregar os clientes " + ex.Message);
+			}
+			finally
+			{
+				conexao.Close();
+			}
 		}
+		
 	}
 }
