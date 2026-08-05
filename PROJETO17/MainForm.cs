@@ -29,7 +29,7 @@ namespace PROJETO17
 			txtfone.Enablend=false;
 		}
 		
-		void limpar()
+		void Limpar()
 		{
 			sqlcon.Close();
 			txtname.Clear();
